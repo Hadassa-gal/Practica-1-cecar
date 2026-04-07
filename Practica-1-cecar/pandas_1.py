@@ -10,3 +10,5 @@ df = pd.DataFrame(estudiantes)
 df= df.dropna(how='all')
 df.info()
 print(df[df.isna().all(axis=1)])
+df1 = df[['nombre', 'edad', 'ocupacion', 'sexo']]
+print(df1)
